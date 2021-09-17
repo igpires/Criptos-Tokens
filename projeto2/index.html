@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Projeto Pratico 02</title>
+</head>
+
+<body>
+
+      <div>
+
+            <h1>Cripto Moedas / Tokens</h2>
+            <h2>Resumo das últimas 24 horas de negociações</h2>
+            <h3>Escolha uma moeda: </h3>
+
+
+            <label for="coinselect">Moeda: </label>
+            <select id="coinselect" name="coins">
+                  <option value="AAVE">Aave</option>
+                  <option value="ACMFT">Fan Token ASR</option>
+                  <option value="ATMFT">Fan Token ATM</option>
+                  <option value="AXS">Axie Infinity Shard</option>
+                  <option value="BAL">Balancer</option>
+                  <option value="BAND">Band Protocol</option>
+                  <option value="BAT">Basic Attention token</option>
+                  <option value="BCH">Bitcoin Cash</option>
+                  <option value="BNT">BANCOR</option>
+                  <option value="BTC">Bitcoin</option>
+                  <option value="CAIFT">Fan Token CAI</option>
+                  <option value="CHZ">Chiliz</option>
+                  <option value="COMP">Compound</option>
+                  <option value="CRV">Curve</option>
+                  <option value="DAI">Dai</option>
+                  <option value="DAL">Balancer</option>
+                  <option value="ENJ">Enjin</option>
+                  <option value="ETH">Ethereum</option>
+                  <option value="GALFT">Fan Token GAL</option>
+                  <option value="GRT">The Graph</option>
+                  <option value="JUVFT">Fan Token JUV</option>
+                  <option value="KNC">Kyber Network</option>
+                  <option value="LINK">CHAINLINK</option>
+                  <option value="LTC">Litecoin</option>
+                  <option value="MANA">Decentraland</option>
+                  <option value="MATIC">Polygon</option>
+                  <option value="MBCONS01">Cota de Consórcio 01</option>
+                  <option value="MBCONS02">Cota de Consórcio 02</option>
+                  <option value="MBPRK01">Precatório MB SP01</option>
+                  <option value="MBPRK02">Precatório MB SP02</option>
+                  <option value="MBPRK03">Precatório MB BR03</option>
+                  <option value="MBPRK04">Precatório MB RJ04</option>
+                  <option value="MBPRK05">Fluxo de Pagamentos 5</option>
+                  <option value="MBVASCO01">MBVASCO01</option>
+                  <option value="MCO2">MCO2</option>
+                  <option value=" MKR">Maker</option>
+                  <option value="OGFT">Fan Token ASR</option>
+                  <option value="OMG">Omg Network</option>
+                  <option value="PAXG">PAX Gold</option>
+                  <option value="PSGFT">Fan Token PSG</option>
+                  <option value="REI">Ren</option>
+                  <option value="SCCPFT">Corinthians</option>
+                  <option value="SNX">Synthetix</option>
+                  <option value="SUSHI">SushiSwap</option>
+                  <option value="UMA">Uma</option>
+                  <option value="UNI">Uniswap</option>
+                  <option value="USDC">USD Coin</option>
+                  <option value="WBTC">Wrapped Bitcoin</option>
+                  <option value="WBX">WiBX</option>
+                  <option value="XRP">XRP</option>
+                  <option value="YFI">Yearn</option>
+
+            </select>
+      </div>
+
+      <div id="graph"></div>
+     
+
+      <script src="https://d3js.org/d3.v7.min.js"></script>
+      <script src="js/d3-v6-tip.js"></script>
+      <script src="https://d3js.org/d3-time-format.v2.min.js"></script>
+      <script src="js/meujs.js"></script>
+      <!-- <script>
+            // funcao para consumir api via get
+      //      async function  fazGet() {
+      //             url = criaUrl()
+      //             obj = (async () => {
+      //                   try {
+      //                         const res = await fetch(url)
+      //                         const out = await res.json()
+      //                         return out
+      //                   } catch (err) {
+      //                         throw err
+      //                   }
+      //             })()
+      //             return obj
+      //       }
+
+      //       //Funcao geradora de url basedo nas informacoes selecionadas na DOM
+      //       function criaUrl() {
+      //             let coin = getSelect()
+      //             let url = "https://www.mercadobitcoin.net/api/" + coin + "/" + "ticker"
+      //             return url
+      //       }
+
+      //       //Funçao que pega o que esta selecionado No dropdown menu
+      //       function getSelect() {
+      //             let select = document.getElementById('coinselect');
+      //             let value = select.options[select.selectedIndex].value;
+      //             return value
+      //       }
+           
+      //       coinselect.addEventListener("change", () => {
+                  
+      //             d3.json(criaUrl()).then(data => {
+      //                   console.log(data.ticker.low);
+      //             });
+      //       });
+
+       </script> -->
+</body>
+
+</html>
